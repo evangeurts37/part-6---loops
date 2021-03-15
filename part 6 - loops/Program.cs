@@ -32,19 +32,10 @@ namespace part_6___loops
                 Console.WriteLine("do you have another score???");
                 if (Console.ReadLine().ToLower() != "yes" )
                      done = true;
-
-
-                Console.WriteLine($"you have {above} tests above 70 out of {total} tests");
                 
             }
-
-
-           
-
-
-            
-
-            
+            Console.WriteLine($"{(above / total)} % of your tests are over 70%");
+            Console.WriteLine("__________________________________________________________________________________________________");
 
 
 
@@ -61,7 +52,14 @@ namespace part_6___loops
 
 
 
-                Console.ReadLine();
+
+
+
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
