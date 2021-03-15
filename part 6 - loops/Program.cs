@@ -10,6 +10,37 @@ namespace part_6___loops
     {
         static void Main(string[] args)
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
