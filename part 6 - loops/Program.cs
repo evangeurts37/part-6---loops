@@ -24,9 +24,6 @@ namespace part_6___loops
                 if (score >= 70)
                 {
                     above += 1;
-                    
-                   
-                    
                 }
                 total += 1;
                 Console.WriteLine("do you have another score???");
@@ -34,7 +31,7 @@ namespace part_6___loops
                      done = true;
                 
             }
-            Console.WriteLine($"{(above / total)} % of your tests are over 70%");
+            Console.WriteLine($"{((double)above / total) *100} % of your tests are over 70%");
             Console.WriteLine("__________________________________________________________________________________________________");
 
 
