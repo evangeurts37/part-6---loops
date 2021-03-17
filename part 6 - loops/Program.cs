@@ -12,6 +12,11 @@ namespace part_6___loops
         {
             Random generator = new Random();
 
+            int minimum;
+            int maximum;
+            int between;
+
+
             int score;
             int above =0;
             int total=0;
@@ -25,6 +30,25 @@ namespace part_6___loops
             int max;
             int ran;
 
+
+
+
+            Console.WriteLine("Please enter a minimum");
+            minimum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Now enter a maximum");
+            maximum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Now enter a numer in between {minimum} and {maximum}.");
+            between = Convert.ToInt32(Console.ReadLine());
+
+            while (between< minimum || between >maximum)
+            {
+                Console.WriteLine($"{between} is not in between {minimum} and {maximum}.");
+                Console.WriteLine("");
+                Console.WriteLine($"Now enter a numer in between {minimum} and {maximum}.");
+                between = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine($"{between} is between {minimum} and {maximum}.");
+            Console.WriteLine("_________________________________________________________________________________________________________");
 
             while (!done)
             {
